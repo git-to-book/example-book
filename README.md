@@ -1,12 +1,14 @@
+Escrever e versionar um livro com markdown, seguindo um padrão de estrutura, para que um webapp suporte a importação desse repositório, e gere o livro para leitura, semelhante ao google books.
+
 ## Estrutura do livro
 
-* front-cover.png = capa da frente (optinal)
-* back-cover.png = capa de tras (optinal)
-* fake-branding.md = falsa folha de rosto (optinal)
+* front-cover.png = capa da frente (optional)
+* back-cover.png = capa de tras (optional)
+* fake-branding.md = falsa folha de rosto (optional)
 * branding.md = folha de rosto (required)
-* branding-verse.md = verso da folha de rosto (optinal)
-* dedication.md = dedicatória (optinal)
-* epigraph.md = epígrafe, citação, pensamento (optinal)
+* branding-verse.md = verso da folha de rosto (optional)
+* dedication.md = dedicatória (optional)
+* epigraph.md = epígrafe, citação, pensamento (optional)
 * figure-list.md = lista de figuras (optional)
 * abbreviation-list.md = lista de abreviações e siglas (optional)
 * preface.md = prefácio (optional)
@@ -37,30 +39,30 @@ http://dillinger.io/
 
 ### ideas
 
-* gif support
-* link get preview
-* preview video youtube vimeo etc
-* global chat
+* suporte a gif
+* previa dos links que nem o telegram facebook faz quando posta algum link.
+* previa de videos youtube vimeo etc
+* um pequeno chat global dentro do livro, tipo o chat do google docs, com os leitorem que estão lendo no momento.
 * offline mode
-* report bug (create issue)
-* colabore edit online (send pull request)
-* search books
-* private books (private repositories, oauth permission)
-* donation or payment to private books
-* favorites
-* classificações
-* add book with git link
-* validator book online
-* identifier exists equals book
+* reportar erro (criar uma issue no repositorio)
+* modo revisor (enviar pull request, basear no revisor do google docs)
+* buscar por livros ja adicionados antes
+* livros privados, obter acesso atraves de APIs
+* aceitar doações nos livros ou pagamentos por livros privados.
+* Favoritar
+* Classificações
+* adicionar livros atraves da conta do github/bitbucket
+* validador de livros
+* Identificar se existe o livro igual ou semelhante para evitar copias
 
 
-### README.md (book settings)
+### criar um arquivo de configuração para o livro que nem o composer.json
 
 * title text (required)
 * description text (optional)
 * categories list (default none) (optional)
 * summary boolean (default true) (optional)
-* adult content false or integer (age)
+* adult content false or integer age (default false) (optional)
 * contributors list (required)
-* donation link or text (optional)
-* captule-separate-page boolean (default false) (optional)
+* donation link (optional)
+* captule-separate-page boolean (default false) (optional) (capitulo separado em uma pagina ou junto com o conteúdo)
